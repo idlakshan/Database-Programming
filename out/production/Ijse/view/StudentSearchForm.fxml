@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="479.0" prefWidth="393.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentSearchFormController">
+   <children>
+      <Label layoutX="107.0" layoutY="14.0" text="Student Seacrch Form" underline="true">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="70.0" layoutY="86.0" onAction="#txtStudentIdOnAction" prefHeight="31.0" prefWidth="254.0" promptText="Student Id" />
+      <TextField fx:id="txtName" layoutX="70.0" layoutY="131.0" prefHeight="31.0" prefWidth="254.0" promptText="Student Name" />
+      <TextField fx:id="txtEmail" layoutX="70.0" layoutY="178.0" prefHeight="31.0" prefWidth="254.0" promptText="Email" />
+      <TextField fx:id="txtContact" layoutX="70.0" layoutY="224.0" prefHeight="31.0" prefWidth="254.0" promptText="Contact Number" />
+      <TextField fx:id="txtAddress" layoutX="70.0" layoutY="271.0" prefHeight="31.0" prefWidth="254.0" promptText="Address" />
+      <TextField fx:id="txtNic" layoutX="70.0" layoutY="320.0" prefHeight="31.0" prefWidth="254.0" promptText="Nic" />
+      <JFXButton buttonType="RAISED" layoutX="143.0" layoutY="384.0" onAction="#btnSearchOnAction" prefHeight="42.0" prefWidth="109.0" style="-fx-background-radius: 50px; -fx-background-color: #e67e22;" text="Search" textFill="WHITE" />
+   </children>
+</AnchorPane>

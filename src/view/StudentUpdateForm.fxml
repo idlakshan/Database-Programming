@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="478.0" prefWidth="395.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentUpdateFormController">
+   <children>
+      <Label layoutX="110.0" layoutY="26.0" text="Student Update Form" underline="true">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="76.0" layoutY="86.0" onAction="#txtStudentId" prefHeight="28.0" prefWidth="244.0" promptText="StudentId" />
+      <TextField fx:id="txtName" layoutX="76.0" layoutY="132.0" prefHeight="28.0" prefWidth="244.0" promptText="Student Name" />
+      <TextField fx:id="txtEmail" layoutX="76.0" layoutY="181.0" prefHeight="28.0" prefWidth="244.0" promptText="Email" />
+      <TextField fx:id="txtContact" layoutX="76.0" layoutY="230.0" prefHeight="28.0" prefWidth="244.0" promptText="Contact Number" />
+      <TextField fx:id="txtAddress" layoutX="76.0" layoutY="276.0" prefHeight="28.0" prefWidth="244.0" promptText="Address" />
+      <TextField fx:id="txtNic" layoutX="76.0" layoutY="323.0" prefHeight="28.0" prefWidth="244.0" promptText="Nic" />
+      <JFXButton layoutX="150.0" layoutY="387.0" onAction="#btnUpdateOnAction" prefHeight="42.0" prefWidth="97.0" style="-fx-background-radius: 50px; -fx-background-color: #44bd32;" text="Update" textFill="WHITE" />
+   </children>
+</AnchorPane>

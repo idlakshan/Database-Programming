@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="478.0" prefWidth="394.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentDeleteFormController">
+   <children>
+      <Label layoutX="113.0" layoutY="31.0" text="Student Delete Form" underline="true">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="71.0" layoutY="103.0" onAction="#txtStudentIdOnAction" prefHeight="31.0" prefWidth="253.0" promptText="Student Id" />
+      <TextField fx:id="txtName" layoutX="71.0" layoutY="148.0" prefHeight="31.0" prefWidth="253.0" promptText="Student Name" />
+      <TextField fx:id="txtEmail" layoutX="71.0" layoutY="196.0" prefHeight="31.0" prefWidth="253.0" promptText="Email" />
+      <TextField fx:id="txtContact" layoutX="71.0" layoutY="241.0" prefHeight="31.0" prefWidth="253.0" promptText="Contact Number" />
+      <TextField fx:id="txtAddress" layoutX="71.0" layoutY="289.0" prefHeight="31.0" prefWidth="253.0" promptText="Address" />
+      <TextField fx:id="txtNic" layoutX="71.0" layoutY="336.0" prefHeight="31.0" prefWidth="253.0" promptText="Nic" />
+      <JFXButton buttonType="RAISED" layoutX="156.0" layoutY="398.0" onAction="#btnDeleteOnAction" prefHeight="38.0" prefWidth="83.0" style="-fx-background-color: #d63031; -fx-background-radius: 50px;" text="Delete" textFill="WHITE" />
+   </children>
+</AnchorPane>
